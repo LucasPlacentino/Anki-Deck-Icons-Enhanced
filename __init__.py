@@ -12,6 +12,8 @@ import aqt
 import bs4 as bs
 # to load css
 from typing import Any, Optional
+# to sanitize deck names
+import re
 
 # get max depth user setting
 config = mw.addonManager.getConfig(__name__)
@@ -31,6 +33,12 @@ def addCss(web_content: aqt.webview.WebContent, context: Optional[Any]) -> None:
          web_content.css.append(base_url_css)
 
 gui_hooks.webview_will_set_content.append(addCss)
+
+def sanitizeDeckName(name: str) -> str:
+     # use regex
+     #return re.sub(r'[\\/#!:]', '', name) # removes chars
+     # or 
+     return re.sub(r'[\\/#!:]', '_', name) # replaces chars with underscore
 
 
 # add icons, correct tree size
@@ -54,7 +62,7 @@ def addDeckIcons(deck_browser, content) -> None:
             continue # skip deck that is too deep
          
         # create the icon address
-        iconAddress = "{}/{}.png".format(base_url_deckIcons, DecksNames[i])
+        iconAddress = "{}/{}.png".format(base_url_deckIcons, sanitizeDeckName(DecksNames[i])) # sanitize the deck name to get an allowed filename
         defaultIconAddress = "{}/../default.png".format(base_url_deckIcons)
 
         # create a new cell to add next to the deck name
