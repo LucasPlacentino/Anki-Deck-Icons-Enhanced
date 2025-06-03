@@ -18,7 +18,7 @@ Here are some deck-name to icon-name pairing examples:
 - "Language" and "`Language.png`"
 - "First Year" and "`First Year.png`"
 - "Language::English.png" and "`English.png`"
-- "First Year::Second Semester::Calculus 1" and "`First Year::Second Semester::Calculus 1.png`"
+- "First Year::Second Semester::Calculus 1" and "`First Year_Second Semester_Calculus 1.png`"
 
 **Your icon's name (hence your deck/sub-deck's name) should not contain the following
 characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.**
