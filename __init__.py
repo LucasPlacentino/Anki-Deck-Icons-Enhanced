@@ -17,7 +17,8 @@ import re
 
 # get max depth user setting
 config = mw.addonManager.getConfig(__name__)
-ICONS_MAX_DECKS_DEPTH = config.get("icons_max_decks_depth", 2)  # fallback is 2
+ICONS_MAX_DECKS_DEPTH: int = config.get("icons_max_decks_depth", 2)  # fallback is 2
+ICONS_SIZE: str = config.get("icons_size", "42px") # fallback is 42px
 
 # give access permission
 mw.addonManager.setWebExports(__name__, r'.+\.(css|png)')
@@ -30,7 +31,17 @@ base_url_css = f'/_addons/{addon_package}/deck_icons.css'
 # load css
 def addCss(web_content: aqt.webview.WebContent, context: Optional[Any]) -> None:
      if isinstance(context, aqt.deckbrowser.DeckBrowser):
-         web_content.css.append(base_url_css)
+          web_content.css.append(base_url_css) # append list of external css filepaths
+
+          dynamic_css = f"""
+          <style>
+          .deckIcons {{
+              width: {ICONS_SIZE};
+              height: {ICONS_SIZE};
+          }}
+          </style>
+          """
+          web_content.head += dynamic_css # concatenate <head> html content with this
 
 gui_hooks.webview_will_set_content.append(addCss)
 
