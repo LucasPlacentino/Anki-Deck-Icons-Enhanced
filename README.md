@@ -35,8 +35,9 @@ There are plenty of them on the internet, such as [flaticon](https://www.flatico
 
 ## Troubleshooting
 
-Post a comment on the add-on's Ankiweb page.  
-Or open an issue on the github repo: [https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues](https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues)
+- Do not use alongside the other deck icon addon ([Deck Icons 1519592143](https://ankiweb.net/shared/info/1519592143?cb=1717067076422)), disable it or uninstall it.  
+- Post a comment on the add-on's Ankiweb page for help from the community.  
+- Or open an issue on the github repo: [https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues](https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues)
 
 ## Acknowledgment
 
