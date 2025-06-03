@@ -10,6 +10,7 @@ This add-on allows you to add icons to your decks, up to a defined maximum sub-d
      - **They should be named exactly as the deck you want the icon for but with these characters swapped with an _underscore `_`_** :  
           **`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`** (the list might not be exhaustive)
 5. If you don't add an icon, `default.png` will be used (you can modify it to your liking as well)
+6. [Optional] You can set the icons size in the add-on config (follow step 1 above), for example `50px`.
 
 ## Examples
 
