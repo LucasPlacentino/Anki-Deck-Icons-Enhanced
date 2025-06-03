@@ -13,6 +13,10 @@ import bs4 as bs
 # to load css
 from typing import Any, Optional
 
+# get max depth user setting
+config = mw.addonManager.getConfig(__name__)
+ICONS_MAX_DECKS_DEPTH = config.get("icons_max_decks_depth", 2)  # fallback is 2
+
 # give access permission
 mw.addonManager.setWebExports(__name__, r'.+\.(css|png)')
 addon_package = mw.addonManager.addonFromModule(__name__)
@@ -32,7 +36,7 @@ gui_hooks.webview_will_set_content.append(addCss)
 # add icons, correct tree size
 def addDeckIcons(deck_browser, content) -> None:
     
-    # get content tree and convert it to a manipulable class
+    # get content tree and convert it to a useable/changeable class
     contentSoup = bs.BeautifulSoup(content.tree, features="html.parser")
     
     ## ADD ICONS ##
@@ -43,14 +47,20 @@ def addDeckIcons(deck_browser, content) -> None:
     
     i=0
     for deck in contentSoup.find_all("td", class_="decktd"):
-        # create the icon adress
-        iconAdress = "{}/{}.png".format(base_url_deckIcons, DecksNames[i])
-        defaultIconAdress = "{}/../default.png".format(base_url_deckIcons)
+        # check deck depth
+        deck_name = DecksNames[i].strip() # deck_name = DecksHTML[i].text.strip()
+        depth = deck_name.count("::")
+        if depth > ICONS_MAX_DECKS_DEPTH:
+            continue # skip deck that is too deep
+         
+        # create the icon address
+        iconAddress = "{}/{}.png".format(base_url_deckIcons, DecksNames[i])
+        defaultIconAddress = "{}/../default.png".format(base_url_deckIcons)
 
         # create a new cell to add next to the deck name
         newCell = contentSoup.new_tag("td")
         # create a tag for the icon to insert in the new cell
-        newIcon = contentSoup.new_tag("img", src=iconAdress, **{'class':'deckIcons', 'onerror': 'this.onerror=null; this.src="'+ defaultIconAdress +'"'})
+        newIcon = contentSoup.new_tag("img", src=iconAddress, **{'class':'deckIcons', 'onerror': 'this.onerror=null; this.src="'+ defaultIconAddress +'"'})
         # add the icon in the new cell
         newCell.append(newIcon)
         # insert the new cell before the deck name
