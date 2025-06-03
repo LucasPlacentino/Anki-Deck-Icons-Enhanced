@@ -2,5 +2,5 @@
   "package": "anki_deck_icons_enhanced",
   "name": "Deck Icons Enhanced",
   "mod": 1748959000,
-  "conflicts": []
+  "conflicts": ["deck_icons"]
 }
