@@ -42,7 +42,7 @@ Or open an issue on the github repo: [https://github.com/LucasPlacentino/Anki-De
 
 This add-on is a fork of [NekoSama8723/Deck-icons](NekoSama8723/Deck-icons), many thanks for their original work for adding icons to the home page deck list.  
 Support them here: [https://buymeacoffee.com/leopicat](https://buymeacoffee.com/leopicat).  
-And read their blog post about the creation of this add-on: [https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html](https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html).  
+And read their blog post about the creation of this add-on: [https://picat.fr/2024/05/30/deck-icons-anki.html](https://picat.fr/2024/05/30/deck-icons-anki.html).  
 
 ## Support/Sponsor
 
