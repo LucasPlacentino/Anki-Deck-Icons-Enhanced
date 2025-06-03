@@ -7,8 +7,8 @@ This add-on allows you to add icons to your decks, up to a defined maximum sub-d
 3. In your files explorer: go to to the **`user_files` folder**
 4. Add icons you'd like for your decks
      - They should be in the **`png`** format.
-     - They should be named exactly as the deck you want the icon for but with these characters swapped with an **underscore `_`** :  
-          **`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`** (the list might not be exhaustive)**
+     - **They should be named exactly as the deck you want the icon for but with these characters swapped with an _underscore `_`_** :  
+          **`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`** (the list might not be exhaustive)
 5. If you don't add an icon, `default.png` will be used (you can modify it to your liking as well)
 
 ## Examples
@@ -20,8 +20,8 @@ Here are some deck-name to icon-name pairing examples:
 - "Language::English.png" and "`English.png`"
 - "First Year::Second Semester::Calculus 1" and "`First Year_Second Semester_Calculus 1.png`"
 
-**Your icon's name (hence your deck/sub-deck's name) should not contain the following
-characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.**
+**Your icons filename should be  exactly the deck name you want the icon for but with these characters swapped with an _underscore `_`_ :  
+_`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`_ (the list might not be exhaustive)**
 
 Here what it can look like, combined with the amazing [Custom Background Image
 and Gear Icon](https://ankiweb.net/shared/info/1210908941) by The AnKing.
