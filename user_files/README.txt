@@ -1,1 +1,0 @@
-There is nothing here.  This file only ensures the `user_files` folder is created.  Try another castle!
