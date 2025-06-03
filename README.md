@@ -34,10 +34,11 @@ There are plenty of them on the internet, such as [flaticon](https://www.flatico
 
 ## Troubleshooting
 
-Post a comment on the add-on's Ankiweb page.
+Post a comment on the add-on's Ankiweb page.  
 Or open an issue on the github repo: [https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues](https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues)
 
 ## Acknowledgment
 
-This add-on is a fork of [NekoSama8723/Deck-icons](NekoSama8723/Deck-icons), many thanks for their original work for adding icons to the home page deck list.
-Support them here: [https://buymeacoffee.com/leopicat](https://buymeacoffee.com/leopicat). And read their blog post about the creation of this add-on: [https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html](https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html).
+This add-on is a fork of [NekoSama8723/Deck-icons](NekoSama8723/Deck-icons), many thanks for their original work for adding icons to the home page deck list.  
+Support them here: [https://buymeacoffee.com/leopicat](https://buymeacoffee.com/leopicat).  
+And read their blog post about the creation of this add-on: [https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html](https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html).  
