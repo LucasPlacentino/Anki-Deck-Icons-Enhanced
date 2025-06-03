@@ -7,9 +7,8 @@ This add-on allows you to add icons to your decks, up to a defined maximum sub-d
 3. In your files explorer: go to to the **`user_files` folder**
 4. Add icons you'd like for your decks
      - They should be in the **`png`** format.
-     - They should be named exactly as the deck you want the icon for.  
-          **Your icon's name (hence your deck's name) should not contain the following
-characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.**
+     - They should be named exactly as the deck you want the icon for but with these characters swapped with an **underscore `_`** :  
+          **`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`** (the list might not be exhaustive)**
 5. If you don't add an icon, `default.png` will be used (you can modify it to your liking as well)
 
 ## Examples
