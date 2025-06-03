@@ -1,24 +1,28 @@
-# Deck-icons
+# Anki Deck Icons Enhanced
 
-## 101
-This add-on allows you to add icons to your decks
+This add-on allows you to add icons to your decks, up to a defined maximum sub-deck depth.
 
-1. On Anki, open the addon's files: go to `Tools` > `Add-ons` > `deck_icons` > `Show files`
-2. On your files explorer, go to to the `user_files` folder
-3. Add icons you'd like for your decks
-     - They should be in the png format.
-     - They should be named as the deck you want the icon for
-4. If you don't add an icon, default.png will be used (you can modify it to your liking)
+1. On Anki, open the add-on's config and set the max depth for decks to have an icon: go to `Tools` > `Add-ons` > `Deck Icons Enhanced` > **`Config`**
+2. On Anki, open the addon's files: go to `Tools` > `Add-ons` > `Deck Icons Enhanced` > **`Show files`**
+3. In your files explorer: go to to the **`user_files` folder**
+4. Add icons you'd like for your decks
+     - They should be in the **`png`** format.
+     - They should be named exactly as the deck you want the icon for.  
+          **Your icon's name (hence your deck's name) should not contain the following
+characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.**
+5. If you don't add an icon, `default.png` will be used (you can modify it to your liking as well)
 
 ## Examples
 
-Here are some "deck name"-"icon name" pairing:
+Here are some deck-name to icon-name pairing examples:
 
-- "Language" and "language.png"
-- "Language::English.png" and "English.png"
+- "Language" and "`Language.png`"
+- "First Year" and "`First Year.png`"
+- "Language::English.png" and "`English.png`"
+- "First Year::Second Semester::Calculus 1" and "`First Year::Second Semester::Calculus 1.png`"
 
-Your icon's name (hence your deck's name) should not contain the following
-characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.
+**Your icon's name (hence your deck/sub-deck's name) should not contain the following
+characters (the list might not be exhaustive): `/`, `\`, `#`, `:`.**
 
 Here what it can look like, combined with the amazing [Custom Background Image
 and Gear Icon](https://ankiweb.net/shared/info/1210908941) by The AnKing.
@@ -27,23 +31,14 @@ and Gear Icon](https://ankiweb.net/shared/info/1210908941) by The AnKing.
 
 ## Where can you find icons?
 
-There are plenty of them on the internet.  I love
-[flaticon](https://www.flaticon.com/), that's where I found the icons in the
-example above. They were made by Freepik.
+There are plenty of them on the internet, such as [flaticon](https://www.flaticon.com/), that's where he icons in the example above are from. They were made by Freepik.
 
 ## Troubleshooting
 
-Let me know in the comments if you run into troubles.  I cannot promise I'll be
-a good enough coder to solve them, but I'll try my best!
+Post a comment on the add-on's Ankiweb page.
+Or open an issue on the github repo: [https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues](https://github.com/LucasPlacentino/Anki-Deck-Icons-Enhanced/issues)
 
-## Support
+## Acknowledgment
 
-If you enjoy this addon, you can support me by buying me one coffee or more on
-this [website](https://buymeacoffee.com/leopicat) ! I talk about [how I created
-this addon](https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html) on
-my website on which you'll also find blog posts (in French) about study tips for
-medical school.
-
- <a href="https://buymeacoffee.com/leopicat" target="_blank">
-  <img src="https://picat.fr/assets/images/bmc/buy-me-coffee-yellow-button.png" width="303px"/>
- </a>
+This add-on is a fork of [NekoSama8723/Deck-icons](NekoSama8723/Deck-icons), many thanks for their original work for adding icons to the home page deck list.
+Support them here: [https://buymeacoffee.com/leopicat](https://buymeacoffee.com/leopicat). And read their blog post about the creation of this add-on: [https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html](https://picat.fr/blogging/anki/2024/05/30/deck-icons-anki.html).
