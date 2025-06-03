@@ -36,9 +36,9 @@ gui_hooks.webview_will_set_content.append(addCss)
 
 def sanitizeDeckName(name: str) -> str:
      # use regex
-     #return re.sub(r'[\\/#!:]', '', name) # removes chars
+     #return re.sub(r'[<>:"/\\|?*]', '', name) # removes chars
      # or 
-     return re.sub(r'[\\/#!:]', '_', name) # replaces chars with underscore
+     return re.sub(r'[<>:"/\\|?*]', '_', name) # replaces chars with underscore
 
 
 # add icons, correct tree size
