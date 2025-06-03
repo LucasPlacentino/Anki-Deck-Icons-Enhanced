@@ -1,11 +1,11 @@
 # Anki Deck Icons enhanced TODO list
 
 ## Add config parameters to
-- [X] Disable icons for sub-decks
-- [ ] Set icon size
+- [X] ~~Disable icons for sub-decks~~
+- [X] ~~Set icon size~~
 
 ## Fix for unsupported deck names
-- [X] Strip forbidden characters (`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`) from deck names for icon files
+- [X] ~~Strip forbidden characters (`<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`) from deck names for icon files~~
 
 ------
 ## Deck icons TODO list
