@@ -50,6 +50,6 @@ And read their blog post about the creation of this add-on: [https://picat.fr/20
 If you want to support my work (first of all, thank you so much!) you can send me a tip/coffee at [my Ko-Fi page](https://ko-fi.com/lucasplacentino) ❤️.
 
 ## License
-**All rights reserved to respective owners** (for now)  
+This project is licensed under the [GNU AGPL-3.0](/LICENSE).  
 
 > _When distributed via **[AnkiWeb](https://ankiweb.net/shared/addons)**, the **[AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html)** license apply, in line with [AnkiWeb's Terms](https://ankiweb.net/account/terms)._  
